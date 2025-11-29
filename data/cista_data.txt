@@ -1,0 +1,5 @@
+- Model 48/3000/35-32 230V: Maximální účinnost 95%
+- Model 48/5000/70-50 230V: Maximální účinnost 96%
+- Model 48/8000/110-100 230V: Maximální účinnost 95%
+- Model 48/10000/140-100 230V: Maximální účinnost 96%
+- Model 48/15000/200-100 230V: Maximální účinnost 95%

@@ -1,0 +1,6 @@
+# Složka virtuálního prostředí
+venv/
+__pycache__/
+
+# Soubor s tajnými klíči
+.env
