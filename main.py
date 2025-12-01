@@ -1,56 +1,68 @@
-# --- FINÁLNÍ KÓD PRO SPRINT 0 - PRÁCE S ČISTÝMI DATY ---
-
-# 1. Instalace a importy (zůstávají v paměti, ale pro jistotu je tu máme)
+# main.py - FINÁLNÍ VERZE, SPOJENÍ SVĚTŮ
 
 import os
-import getpass
-from langchain_community.document_loaders import TextLoader
+from dotenv import load_dotenv
+from parse_pdf_tables import parse_pdf_tables
+from langchain_core.documents import Document
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
+from langchain.chains import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
 
-if "OPENAI_API_KEY" not in os.environ:
-    os.environ["OPENAI_API_KEY"] = getpass.getpass("Zadejte svůj OpenAI API klíč: ")
-print("✅ Klíč API nastaven.")
+# --- 1. KONFIGURACE A NAHRÁNÍ DAT ---
+load_dotenv()
+print("✅ Konfigurace a klíče načteny.")
 
-# 2. Načtení z čistého zdroje pravdy
-file_path = "data/cista_data.txt"
-loader = TextLoader(file_path)
-documents = loader.load()
-print(f"✅ Čistá data z '{file_path}' načtena.")
+PDF_FILE_PATH = os.path.join("data", "MultiPLus.pdf")
+PAGES_TO_PARSE = [33, 35]
 
-# 3. Zpracování a stavba databáze
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=0) # Menší chunky pro přesnost
+clean_data_string = parse_pdf_tables(pdf_path=PDF_FILE_PATH, pages=PAGES_TO_PARSE)
+
+if not clean_data_string:
+    print("❌ Nebyla získána žádná data z PDF. Systém se ukončuje.")
+    exit()
+
+# --- 2. ZPRACOVÁNÍ A STAVBA VEKTOROVÉ DATABÁZE ---
+print("\n--- Zpracovávám data a stavím RAG systém ---")
+documents = [Document(page_content=clean_data_string)]
+
+# ZDE JE FINÁLNÍ ÚPRAVA: Donutíme splitter, aby vytvořil jeden velký chunk
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=4000, chunk_overlap=200)
+
 texts = text_splitter.split_documents(documents)
 print(f"Data rozdělena na {len(texts)} částí (chunků).")
+
 embeddings = OpenAIEmbeddings()
 db = FAISS.from_documents(texts, embeddings)
 print("✅ Vektorová databáze vytvořena.")
+llm = ChatOpenAI(model_name="gpt-4-turbo-preview", temperature=0)
+retriever = db.as_retriever() # Už nepotřebujeme specifikovat "k", máme jen pár velkých chunků
 
-# 4. Prompt Engineering pro přesnost
-prompt_template = """Jste přesný a precizní technický asistent. Použijte následující kontext k zodpovězení otázky na konci.
-- NESHRNUJTE, NEGENERALIZUJTE.
-- Vypište každý model a jeho hodnotu samostatně.
-- Pokud informace v kontextu není, napište "Informace není v poskytnutém kontextu k dispozici".
-Kontext: {context}
-Otázka: {question}
-Přesná odpověď:"""
-PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
+# --- 3. SESTAVENÍ ŘETĚZCE POMOCÍ MODERNÍ LCEL ARCHITEKTURY ---
 
-# 5. Sestavení finálního řetězce
-retriever = db.as_retriever(search_kwargs={"k": 5}) # Stačí nám 5, protože máme málo čistých dat
-final_qa_chain = RetrievalQA.from_chain_type(
-    llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0),
-    chain_type="stuff",
-    retriever=retriever,
-    chain_type_kwargs={"prompt": PROMPT}
+prompt = ChatPromptTemplate.from_template(
+    """Jste přesný a precizní technický asistent. Odpovězte na otázku uživatele POUZE na základě poskytnutého kontextu.
+Pokud odpověď v kontextu není, řekněte to. Kombinujte informace z celého kontextu pro kompletní odpověď.
+
+Kontext:
+{context}
+
+Otázka: {input}
+
+Odpověď:"""
 )
-print("✅✅✅ Finální QA řetězec je připraven. ✅✅✅\n")
 
-# --- FINÁLNÍ TEST ---
-query = "Jaká je maximální účinnost pro každou verzi?"
-result = final_qa_chain.invoke({"query": query})
+document_chain = create_stuff_documents_chain(llm, prompt)
+rag_chain = create_retrieval_chain(retriever, document_chain)
+
+print("✅✅✅ Moderní RAG řetězec (LCEL) je připraven. ✅✅✅\n")
+
+# --- 4. FINÁLNÍ TEST ---
+query = "Jaká je maximální účinnost pro každý model? Vypiš hodnoty přehledně pro všechny nalezené modely."
+result = rag_chain.invoke({"input": query})
+
 print(f"Otázka: {query}\n")
-print(f"Odpověď:\n{result['result']}")
+print(f"Odpověď:\n{result['answer']}")
+

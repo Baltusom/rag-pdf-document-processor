@@ -1,6 +1,15 @@
-# Složka virtuálního prostředí
-venv/
-__pycache__/
+# Soubory operačního systému
+.DS_Store
 
-# Soubor s tajnými klíči
+# Adresář virtuálního prostředí
+venv/
+/venv/
+
+# Soubor s privátními klíči
 .env
+
+# Cache soubory Pythonu
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

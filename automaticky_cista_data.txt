@@ -1,0 +1,72 @@
+- PowerControl & PowerAssist: 48/3000/35-32 230V má hodnotu Yes; 48/5000/70-50 230V má hodnotu Yes
+- Transfer switch: 48/3000/35-32 230V má hodnotu 32A; 48/5000/70-50 230V má hodnotu 50A
+- Maximum AC input current: 48/3000/35-32 230V má hodnotu 32A; 48/5000/70-50 230V má hodnotu 50A
+- Type of electrical supply system to be connected: 48/3000/35-32 230V má hodnotu TN/TT; 48/5000/70-50 230V má hodnotu TN/TT
+- DC Input voltage range: 48/3000/35-32 230V má hodnotu 38 – 66 V; 48/5000/70-50 230V má hodnotu 38 – 66 V
+- AC Output voltage: 48/3000/35-32 230V má hodnotu 230 V ± 2%; 48/5000/70-50 230V má hodnotu 230 V ± 2%
+- AC output frequency: 48/3000/35-32 230V má hodnotu 50 Hz ± 0,1% (1); 48/5000/70-50 230V má hodnotu 50 Hz ± 0,1% (1)
+- AC output current: 48/3000/35-32 230V má hodnotu 11A; 48/5000/70-50 230V má hodnotu 19A
+- Continous output power at 25°C (3): 48/3000/35-32 230V má hodnotu 3000 VA; 48/5000/70-50 230V má hodnotu 5000 VA
+- Continuous. output power at 25°C: 48/3000/35-32 230V má hodnotu 2400 W; 48/5000/70-50 230V má hodnotu 4000 W
+- Continuous. output power at 40°C: 48/3000/35-32 230V má hodnotu 2200 W; 48/5000/70-50 230V má hodnotu 3700 W
+- Continuou. output power at 65°C: 48/3000/35-32 230V má hodnotu 1700 W; 48/5000/70-50 230V má hodnotu 3000 W
+- Max apparent feed-in power: 48/3000/35-32 230V má hodnotu 3000 VA; 48/5000/70-50 230V má hodnotu 5000 VA
+- Peak power: 48/3000/35-32 230V má hodnotu 5500 W; 48/5000/70-50 230V má hodnotu 9000 W
+- Maximum output fault current: 48/3000/35-32 230V má hodnotu 32A for 1s; 48/5000/70-50 230V má hodnotu 53A for 1s
+- Maximum output over current protection: 48/3000/35-32 230V má hodnotu 32A; 48/5000/70-50 230V má hodnotu 53A
+- Overvoltage category for all ports: 48/3000/35-32 230V má hodnotu OVC III; 48/5000/70-50 230V má hodnotu OVC III
+- Active anti-islanding method: 48/3000/35-32 230V má hodnotu Frequency Shift method; 48/5000/70-50 230V má hodnotu Frequency Shift method
+- Maximum battery discharge current: 48/3000/35-32 230V má hodnotu 75A; 48/5000/70-50 230V má hodnotu 110A
+- Maximum efficiency: 48/3000/35-32 230V má hodnotu 95%; 48/5000/70-50 230V má hodnotu 96%
+- Zero load power: 48/3000/35-32 230V má hodnotu 11 W; 48/5000/70-50 230V má hodnotu 18 W
+- Zero load power in AES mode: 48/3000/35-32 230V má hodnotu 7 W; 48/5000/70-50 230V má hodnotu 12 W
+- Zero load power in Search mode: 48/3000/35-32 230V má hodnotu 2 W; 48/5000/70-50 230V má hodnotu 2 W
+- Inverter topology: 48/3000/35-32 230V má hodnotu Isolated; 48/5000/70-50 230V má hodnotu Isolated
+- AC Input voltage range GENERAL: 48/3000/35-32 230V má hodnotu 187-250 V; 48/5000/70-50 230V má hodnotu 187-250 V
+- AC Input frequency range: 48/3000/35-32 230V má hodnotu 45 – 65 Hz; 48/5000/70-50 230V má hodnotu 45 – 65 Hz
+- Charge voltage 'absorption': 48/3000/35-32 230V má hodnotu 57.6 V; 48/5000/70-50 230V má hodnotu 57.6 V
+- Charge voltage 'float': 48/3000/35-32 230V má hodnotu 55.2 V; 48/5000/70-50 230V má hodnotu 55.2 V
+- Storage mode: 48/3000/35-32 230V má hodnotu 52.8 V; 48/5000/70-50 230V má hodnotu 52.8 V
+- Max. battery charge current (4): 48/3000/35-32 230V má hodnotu 35 A; 48/5000/70-50 230V má hodnotu 70 A
+- Battery temperature sensor: 48/3000/35-32 230V má hodnotu Yes; 48/5000/70-50 230V má hodnotu Yes
+- Compatible battery chemistries: 48/3000/35-32 230V má hodnotu Lead-acid, Lithium, Zinc-Bromine and others (5); 48/5000/70-50 230V má hodnotu Lead-acid, Lithium, Zinc-Bromine and others (5)
+- Auxiliary AC output: 48/3000/35-32 230V má hodnotu Yes (32A); 48/5000/70-50 230V má hodnotu Yes (32A)
+- External AC current sensor (optional): 48/3000/35-32 230V má hodnotu 50A; 48/5000/70-50 230V má hodnotu 100A
+- PowerControl & PowerAssist: 48/8000/110-100 230V má hodnotu Yes; 48/10000/140-100 230V má hodnotu Yes; 48/15000/ 200-100 230V má hodnotu Yes
+- Transfer switch: 48/8000/110-100 230V má hodnotu 100A; 48/10000/140-100 230V má hodnotu 100A; 48/15000/ 200-100 230V má hodnotu 100A
+- Maximum AC input current: 48/8000/110-100 230V má hodnotu 100A; 48/10000/140-100 230V má hodnotu 100A; 48/15000/ 200-100 230V má hodnotu 100A
+- Type of electrical supply system to be connected: 48/8000/110-100 230V má hodnotu TN/TT; 48/10000/140-100 230V má hodnotu TN/TT; 48/15000/ 200-100 230V má hodnotu TN/TT
+- DC Input voltage range: 48/8000/110-100 230V má hodnotu 38 – 66 V; 48/10000/140-100 230V má hodnotu 38 – 66 V; 48/15000/ 200-100 230V má hodnotu 38 – 66 V
+- AC Output voltage: 48/8000/110-100 230V má hodnotu 230 V ± 2%; 48/10000/140-100 230V má hodnotu 230 V ± 2%; 48/15000/ 200-100 230V má hodnotu 230 V ± 2%
+- AC output frequency: 48/8000/110-100 230V má hodnotu 50 Hz ± 0,1% (1); 48/10000/140-100 230V má hodnotu 50 Hz ± 0,1% (1); 48/15000/ 200-100 230V má hodnotu 50 Hz ± 0,1% (1)
+- AC output current: 48/8000/110-100 230V má hodnotu 29A; 48/10000/140-100 230V má hodnotu 36A; 48/15000/ 200-100 230V má hodnotu 54A
+- Continuous output power at 25°C (3): 48/8000/110-100 230V má hodnotu 8000 VA; 48/10000/140-100 230V má hodnotu 10000 VA; 48/15000/ 200-100 230V má hodnotu 15000 VA
+- Continuous output power at 25°C: 48/8000/110-100 230V má hodnotu 6400 W; 48/10000/140-100 230V má hodnotu 8000 W; 48/15000/ 200-100 230V má hodnotu 12000 W
+- Continuous output power at 40°C: 48/8000/110-100 230V má hodnotu 5500 W; 48/10000/140-100 230V má hodnotu 7000 W; 48/15000/ 200-100 230V má hodnotu 10000 W
+- Continuous output power at 65°C: 48/8000/110-100 230V má hodnotu 4000 W; 48/10000/140-100 230V má hodnotu 6000 W; 48/15000/ 200-100 230V má hodnotu 7000 W
+- Peak power: 48/8000/110-100 230V má hodnotu 15000 W; 48/10000/140-100 230V má hodnotu 18000 W; 48/15000/ 200-100 230V má hodnotu 27000 W
+- Maximum output fault current: 48/8000/110-100 230V má hodnotu 80A; 48/10000/140-100 230V má hodnotu 100 A; 48/15000/ 200-100 230V má hodnotu 150 A
+- Maximum output over current protection AC OUT 1: 48/8000/110-100 230V má hodnotu 135A; 48/10000/140-100 230V má hodnotu 143 A; 48/15000/ 200-100 230V má hodnotu 165 A
+- Maximum output over current protection AC OUT 2: 48/8000/110-100 230V má hodnotu 50A; 48/10000/140-100 230V má hodnotu 50A; 48/15000/ 200-100 230V má hodnotu 50A
+- Overvoltage category for all ports: 48/8000/110-100 230V má hodnotu OVC III; 48/10000/140-100 230V má hodnotu OVC III; 48/15000/ 200-100 230V má hodnotu OVC III
+- Active anti-islanding method: 48/8000/110-100 230V má hodnotu Frequency Shift method; 48/10000/140-100 230V má hodnotu Frequency Shift method; 48/15000/ 200-100 230V má hodnotu Frequency Shift method
+- Maximum battery discharge current: 48/8000/110-100 230V má hodnotu 188A; 48/10000/140-100 230V má hodnotu 235A; 48/15000/ 200-100 230V má hodnotu 350A
+- Maximum efficiency: 48/8000/110-100 230V má hodnotu 95%; 48/10000/140-100 230V má hodnotu 96%; 48/15000/ 200-100 230V má hodnotu 95%
+- Zero load power: 48/8000/110-100 230V má hodnotu 29 W; 48/10000/140-100 230V má hodnotu 38 W; 48/15000/ 200-100 230V má hodnotu 55 W
+- Zero load power in AES mode: 48/8000/110-100 230V má hodnotu 19 W; 48/10000/140-100 230V má hodnotu 27 W; 48/15000/ 200-100 230V má hodnotu 39 W
+- Zero load power in Search mode: 48/8000/110-100 230V má hodnotu 3 W; 48/10000/140-100 230V má hodnotu 4 W; 48/15000/ 200-100 230V má hodnotu 6 W
+- Inverter topology: 48/8000/110-100 230V má hodnotu Isolated; 48/10000/140-100 230V má hodnotu Isolated; 48/15000/ 200-100 230V má hodnotu Isolated
+- AC Input voltage range GENERAL: 48/8000/110-100 230V má hodnotu 230V ±10%; 48/10000/140-100 230V má hodnotu 230V ±10%; 48/15000/ 200-100 230V má hodnotu 230V ±10%
+- AC Input frequency range: 48/8000/110-100 230V má hodnotu 45 – 65 Hz; 48/10000/140-100 230V má hodnotu 45 – 65 Hz; 48/15000/ 200-100 230V má hodnotu 45 – 65 Hz
+- Maximum AC Input current while charging: 48/8000/110-100 230V má hodnotu 27A; 48/10000/140-100 230V má hodnotu 32A; 48/15000/ 200-100 230V má hodnotu 48A
+- AC Input voltage – lower threshold for charging cutoff: 48/8000/110-100 230V má hodnotu 210V; 48/10000/140-100 230V má hodnotu 210V; 48/15000/ 200-100 230V má hodnotu 210V
+- Charge voltage 'absorption': 48/8000/110-100 230V má hodnotu 57.6 V; 48/10000/140-100 230V má hodnotu 57.6 V; 48/15000/ 200-100 230V má hodnotu 57.6 V
+- Charge voltage 'float': 48/8000/110-100 230V má hodnotu 55.2 V; 48/10000/140-100 230V má hodnotu 55.2 V; 48/15000/ 200-100 230V má hodnotu 55.2 V
+- Storage mode: 48/8000/110-100 230V má hodnotu 52.8 V; 48/10000/140-100 230V má hodnotu 52.8 V; 48/15000/ 200-100 230V má hodnotu 52.8 V
+- Max. battery charge current (4): 48/8000/110-100 230V má hodnotu 110 A; 48/10000/140-100 230V má hodnotu 140 A; 48/15000/ 200-100 230V má hodnotu 200 A
+- Battery temperature sensor: 48/8000/110-100 230V má hodnotu Yes; 48/10000/140-100 230V má hodnotu Yes; 48/15000/ 200-100 230V má hodnotu Yes
+- Compatible battery chemistries: 48/8000/110-100 230V má hodnotu Lead-acid, Lithium and others (5); 48/10000/140-100 230V má hodnotu Lead-acid, Lithium and others (5); 48/15000/ 200-100 230V má hodnotu Lead-acid, Lithium and others (5)
+- Auxiliary AC output: 48/8000/110-100 230V má hodnotu Yes (50A); 48/10000/140-100 230V má hodnotu Yes (50A); 48/15000/ 200-100 230V má hodnotu Yes (50A)
+- AC output current with Power assist (AC Out 1): 48/8000/110-100 230V má hodnotu 129A; 48/10000/140-100 230V má hodnotu 136A; 48/15000/ 200-100 230V má hodnotu 154A
+- AC output current with Power assist (AC Out 2): 48/8000/110-100 230V má hodnotu 50A; 48/10000/140-100 230V má hodnotu 50A; 48/15000/ 200-100 230V má hodnotu 50A
+- External AC current sensor (optional): 48/8000/110-100 230V má hodnotu 100 or 400A; 48/10000/140-100 230V má hodnotu 100 or 400A; 48/15000/ 200-100 230V má hodnotu 100 or 400A
