@@ -26,6 +26,8 @@ if uploaded_file:
                         full_text += page.extract_text() or ""
 
                 st.session_state.full_text = full_text
+                st.write(f"Délka textu: {len(full_text)} znaků")
+                st.write(full_text[:500])
                 st.success("✅ Dokument zpracován. Ptej se!")
 
             except Exception as e:
